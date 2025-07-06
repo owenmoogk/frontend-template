@@ -3,6 +3,7 @@ import { Navigate } from 'react-router-dom';
 
 import { Homepage } from './components/Homepage';
 import './main.css';
+import NotFoundPage from '@components/NotFoundPage';
 
 export type PathList = {
   path: string;
@@ -12,6 +13,7 @@ export type PathList = {
 
 export const paths: PathList[] = [
   { path: '/', element: <Homepage /> },
+  { path: '/404', element: <NotFoundPage /> },
   { path: '*', element: <Navigate to="/404" /> },
 ];
 

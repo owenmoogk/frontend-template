@@ -12,7 +12,6 @@ export default function App() {
   return (
     <>
       <Nav />
-      <div id="backgroundDiv" />
       <Container
         maw={width < 700 ? '100vw' : 'calc(100vw - 120px)'}
         m={'auto'}

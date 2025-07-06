@@ -33,9 +33,6 @@ jobs:
       
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-
-      - name: Compile Less to CSS
-        run: npx less-watch-compiler src/less src main.less --run-once
       
       - name: Build
         run: yarn build
@@ -69,9 +66,6 @@ jobs:
       
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-
-      - name: Compile Less to CSS
-        run: npx less-watch-compiler src/less src main.less --run-once
 
       - name: Run ESLint
         run: yarn lint

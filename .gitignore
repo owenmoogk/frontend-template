@@ -1,15 +1,4 @@
 node_modules/
-build/
 dist/
 
-public/img/projects/ecoflow/demo.mp4
-
-src/main.css
-
 .env
-
-# generated projects files
-src/api/projects.json
-public/assets/projects.json
-
-.obsidian
