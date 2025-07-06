@@ -11,7 +11,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit",
-    "test": "yarn lint && yarn typecheck"
+    "test": "yarn lint && yarn typecheck",
+    "ver": "yarn version && git push && git push --tags"
   },
   "dependencies": {
     "@mantine/core": "^8.1.2",

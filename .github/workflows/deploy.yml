@@ -6,7 +6,7 @@ on:
       - '*'
 
     tags:
-        - 'v*'
+      - 'v*'
 
 permissions:
   contents: write
@@ -17,19 +17,29 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+    env:
+      VITE_SPOTIFY_CLIENT_ID: ${{ secrets.VITE_SPOTIFY_CLIENT_ID }}
+      VITE_SPOTIFY_CLIENT_SECRET: ${{ secrets.VITE_SPOTIFY_CLIENT_SECRET }}
+      VITE_SPOTIFY_REFRESH_TOKEN: ${{ secrets.VITE_SPOTIFY_REFRESH_TOKEN }}
+      VITE_MAPTILER_API_KEY: ${{ secrets.VITE_MAPTILER_API_KEY }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
+      
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+
       - name: Compile Less to CSS
         run: npx less-watch-compiler src/less src main.less --run-once
+      
       - name: Build
-        run: yarn build    
+        run: yarn build
+      
       - name: Upload build artifacts
         uses: actions/upload-pages-artifact@v3
         with:
@@ -51,16 +61,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
+      
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+
       - name: Compile Less to CSS
         run: npx less-watch-compiler src/less src main.less --run-once
+
       - name: Run ESLint
-        run: yarn lint      
+        run: yarn lint
+      
       - name: Type Check
         run: yarn typecheck
 
@@ -81,7 +96,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.ref_name }}
-          release_name: Release ${{ github.ref_name }}
+          release_name: ${{ github.ref_name }}
           draft: false
           prerelease: false
           body: |
