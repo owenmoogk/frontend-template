@@ -79,6 +79,13 @@ export default [
         'error',
         { location: 'line-aligned' },
       ],
+      'react/jsx-curly-brace-presence': [
+        'error',
+        {
+          props: 'never',
+          children: 'never',
+        },
+      ],
       'react/jsx-fragments': 'error',
       'react/jsx-no-useless-fragment': 'error',
       'react/jsx-pascal-case': [

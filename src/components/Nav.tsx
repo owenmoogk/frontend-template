@@ -114,7 +114,7 @@ export default function Nav() {
         size="100%"
         withCloseButton={false}
       >
-        <Box pos={'absolute'} right={0} top={0} p="xl" onClick={close}>
+        <Box pos="absolute" right={0} top={0} p="xl" onClick={close}>
           <IoIosClose size={40} />
         </Box>
         <Stack h="calc(100vh - 66px)" justify="space-between">

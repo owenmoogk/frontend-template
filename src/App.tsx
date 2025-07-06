@@ -14,7 +14,7 @@ export default function App() {
       <Nav />
       <Container
         maw={width < 700 ? '100vw' : 'calc(100vw - 120px)'}
-        m={'auto'}
+        m="auto"
         pb={50}
         pt={40}
       >

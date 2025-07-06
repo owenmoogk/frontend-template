@@ -9,7 +9,6 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit",
     "test": "yarn lint && yarn typecheck",
     "ver:major": "yarn version --major && git push && git push --tags",
