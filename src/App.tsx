@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router';
 
 import Nav from './components/Nav';
 import './main.css';
-import { paths } from 'Paths';
+import { paths } from './Paths';
 
 export default function App() {
   const { width } = useViewportSize();
