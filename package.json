@@ -1,5 +1,5 @@
 {
-  "homepage": "https://owenmoogk.github.io/frontend-template",
+  "homepage": "https://owenmoogk.github.io/frontend-template/",
   "name": "frontend-template",
   "private": true,
   "version": "0.1.6",
@@ -12,7 +12,7 @@
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit",
     "test": "yarn lint && yarn typecheck",
-    "ver": "yarn version && git push && git push --tags"
+    "ver": "yarn version $@ && git push && git push --tags"
   },
   "dependencies": {
     "@mantine/core": "^8.1.2",
