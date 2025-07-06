@@ -19,7 +19,6 @@ export default function App() {
         pb={50}
         pt={40}
       >
-        Test
         <Routes>
           {paths.map((route, index) => (
             <Route key={index} path={route.path} element={route.element}>
