@@ -1,0 +1,24 @@
+.header {
+  height: 56px;
+  background-color: var(--mantine-color-body);
+  border-bottom: 1px solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.link {
+  line-height: 1;
+  padding: 8px 12px;
+  font-weight: 500;
+
+  @mixin hover {
+    background-color: light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-6));
+  }
+}
+
+.linkLabel {
+  margin-right: 5px;
+}
