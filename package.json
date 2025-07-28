@@ -2,7 +2,7 @@
   "homepage": "https://owenmoogk.github.io/frontend-template/",
   "name": "frontend-template",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "scripts": {
     "start": "vite",
