@@ -11,9 +11,9 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "yarn lint && yarn typecheck",
-    "ver:major": "yarn version --major && git push && git push --tags",
-    "ver:minor": "yarn version --minor && git push && git push --tags",
-    "ver:patch": "yarn version --patch && git push && git push --tags"
+    "ver:major": "git pull && yarn version --major && git push && git push --tags",
+    "ver:minor": "git pull && yarn version --minor && git push && git push --tags",
+    "ver:patch": "git pull && yarn version --patch && git push && git push --tags"
   },
   "dependencies": {
     "@mantine/core": "^8.1.2",
