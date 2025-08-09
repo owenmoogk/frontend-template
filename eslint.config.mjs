@@ -94,23 +94,6 @@ export default [
       ],
       'react/self-closing-comp': 'error',
 
-      // import
-      'import/order': [
-        'error',
-        {
-          groups: [
-            ['builtin', 'external'],
-            ['internal', 'sibling', 'parent', 'index', 'object'],
-          ],
-          pathGroups: [
-            { pattern: 'react', group: 'builtin', position: 'before' },
-            { pattern: '**/*.json', group: 'object', position: 'after' },
-          ],
-          alphabetize: { order: 'asc', caseInsensitive: true },
-          'newlines-between': 'always',
-          warnOnUnassignedImports: true,
-        },
-      ],
       'import/no-named-as-default': 'error',
 
       // javascript
