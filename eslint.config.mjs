@@ -99,7 +99,7 @@ export default [
       // javascript
       'no-useless-return': 'error',
       eqeqeq: 'error',
-      'no-console': 'warn',
+      'no-console': ['warn', { allow: ['warn', 'error'] }],
       'no-var': 'error',
       'prefer-const': 'error',
       'prefer-promise-reject-errors': 'error',
