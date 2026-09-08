@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { Navigate } from 'react-router-dom';
 
-import { CalendarApp } from './components/CalendarApp';
+import { Homepage } from './components/Homepage';
 import './main.css';
 import NotFoundPage from '@components/NotFoundPage';
 
@@ -12,7 +12,7 @@ export type PathList = {
 };
 
 export const paths: PathList[] = [
-  { path: '/', element: <CalendarApp /> },
+  { path: '/', element: <Homepage /> },
   { path: '/404', element: <NotFoundPage /> },
   { path: '*', element: <Navigate to="/404" /> },
 ];

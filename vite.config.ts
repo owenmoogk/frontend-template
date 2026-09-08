@@ -18,15 +18,15 @@ export default defineConfig({
     eslint({
       include: ['src/**/*.ts', 'src/**/*.tsx'],
       emitWarning: true,
-      emitError: false,
+      emitError: false, // error doesn't block compilation
       failOnWarning: false,
-      failOnError: false,
+      failOnError: false, // error doesn't block compilation
     }),
   ],
   server: {
     port: 3000,
   },
-  base: '/ical-display/',
+  base: '/frontend-template/',
   resolve: {
     alias: {
       '@components': path.resolve(__dirname, './src/components'),
