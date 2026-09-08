@@ -33,3 +33,7 @@ a {
   color: var(--mantine-color-text);
   text-decoration: none;
 }
+
+.mantine-Modal-content {
+  background-color: var(--mantine-color-body) !important;
+}

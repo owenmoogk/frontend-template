@@ -1,6 +1,6 @@
 {
-  "homepage": "https://owenmoogk.github.io/frontend-template/",
-  "name": "frontend-template",
+  "homepage": "https://owenmoogk.github.io/ical-display/",
+  "name": "ical-display",
   "private": true,
   "version": "1.0.3",
   "type": "module",
@@ -18,7 +18,10 @@
   "dependencies": {
     "@mantine/core": "^8.1.2",
     "@mantine/hooks": "^8.1.2",
+    "date-fns": "^4.4.0",
+    "ical.js": "^2.2.1",
     "react": "^19.1.0",
+    "react-big-calendar": "^1.20.0",
     "react-dom": "^19.1.0",
     "react-helmet-async": "^2.0.5",
     "react-icons": "^5.5.0",
@@ -29,6 +32,7 @@
     "@eslint/js": "^9.30.1",
     "@types/node": "^24.0.10",
     "@types/react": "^19.1.8",
+    "@types/react-big-calendar": "^1.16.3",
     "@types/react-dom": "^19.1.6",
     "@typescript-eslint/eslint-plugin": "^8.35.1",
     "@typescript-eslint/parser": "^8.35.1",
