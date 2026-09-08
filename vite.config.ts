@@ -3,13 +3,6 @@ import path from 'path';
 import { defineConfig } from 'vite';
 import eslint from 'vite-plugin-eslint';
 
-export const ProjectJsonPath = path.resolve(
-  __dirname,
-  'src',
-  'api',
-  'projects.json'
-);
-
 export default defineConfig({
   plugins: [
     react({
